@@ -1,2 +1,10 @@
-//Author: Katie Vogel
-//Base Project Created June 23 2016
+angular.module('baseApp', []);
+
+angular.module('baseApp').controller('MainController', function($scope){
+
+  var vm = this;
+
+  vm.message = "Welcome to Katie's Base Project"; 
+
+
+});//end controller

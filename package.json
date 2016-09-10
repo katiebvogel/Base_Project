@@ -16,5 +16,10 @@
   "bugs": {
     "url": "https://github.com/katiebvogel/Base_Project/issues"
   },
-  "homepage": "https://github.com/katiebvogel/Base_Project#readme"
+  "homepage": "https://github.com/katiebvogel/Base_Project#readme",
+  "dependencies": {
+    "angular": "^1.5.8",
+    "angular-route": "^1.5.8",
+    "express": "^4.14.0"
+  }
 }

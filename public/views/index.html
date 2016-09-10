@@ -3,13 +3,21 @@
   <head>
     <meta charset = "utf-8" />
     <title>Base Project</title>
-    <link rel = "stylesheet" href = "stylesheet.css" type = "text/css" />
-    <script src = "app.js"></script>
+    <script src="vendors/angular.min.js"></script>
+    <script src="vendors/angular-route.min.js"></script>
+    <link rel = "stylesheet" href = "styles/stylesheet.css" type = "text/css" />
+    <script src="scripts/config.js"></script>
+    <script src = "scripts/app.js"></script>
+    <base href="/" />
   </head>
-  <body>
+  <body ng-controller = "MainController as main">
     <h1>Katie's Base Project Lives Here</h1>
       <p>
-        Some modifications occurs.
+        Some modifications occur. {{message}}
       </p>
+      <a href="/template"><button>Go to template</button></a>
+      <div ng-view class="template view">
+
+      </div>
   </body>
 </html>
