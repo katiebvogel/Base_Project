@@ -10,7 +10,8 @@
     <script src = "scripts/app.js"></script>
     <base href="/" />
   </head>
-  <body ng-controller = "MainController as main">
+  <body ng-model = "main.message">
+    <div class = "wrapper">
     <h1>Katie's Base Project Lives Here</h1>
       <p>
         Some modifications occur. {{message}}
@@ -19,5 +20,6 @@
       <div ng-view class="template view">
 
       </div>
+    </div>
   </body>
 </html>
