@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang = "en">
+<html lang = "en" ng-app="baseApp">
   <head>
     <meta charset = "utf-8" />
     <title>Base Project</title>
@@ -8,13 +8,16 @@
     <link rel = "stylesheet" href = "styles/stylesheet.css" type = "text/css" />
     <script src="scripts/config.js"></script>
     <script src = "scripts/app.js"></script>
+    <script src="scripts/MainController.js"></script>
+    <script src="scripts/TemplateController.js"></script>
+
     <base href="/" />
   </head>
   <body ng-model = "main.message">
     <div class = "wrapper">
     <h1>Katie's Base Project Lives Here</h1>
       <p>
-        Some modifications occur. {{message}}
+        Some modifications occur. {{main.message}}
       </p>
       <a href="/template"><button>Go to template</button></a>
       <div ng-view class="template view">
